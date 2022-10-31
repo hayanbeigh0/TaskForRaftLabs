@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ApiDataEntriesWidget extends StatelessWidget {
   const ApiDataEntriesWidget({
@@ -15,10 +16,7 @@ class ApiDataEntriesWidget extends StatelessWidget {
       children: [
         Text(
           title,
-          style: const TextStyle(
-            fontSize: 15,
-            fontWeight: FontWeight.w500,
-          ),
+          style: GoogleFonts.lato(fontSize: 16, fontWeight: FontWeight.w600),
         ),
         const SizedBox(
           width: 5,
@@ -26,10 +24,7 @@ class ApiDataEntriesWidget extends StatelessWidget {
         Expanded(
           child: Text(
             info,
-            style: const TextStyle(
-              fontSize: 15,
-              fontWeight: FontWeight.w400,
-            ),
+            style: GoogleFonts.lato(fontSize: 16),
           ),
         ),
       ],

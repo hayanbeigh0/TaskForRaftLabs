@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 import '../logic/blocs/internet/internet_bloc.dart';
@@ -24,8 +25,14 @@ class WebViewScreen extends StatelessWidget {
               );
             }
             if (state is InternetDisconnected) {
-              return const Center(
-                child: Text('No Internet Connection'),
+              return Center(
+                child: Text(
+                  state.msg,
+                  style: GoogleFonts.lato(
+                      fontSize: 18,
+                      color: Colors.red,
+                      fontWeight: FontWeight.bold),
+                ),
               );
             }
             return const SizedBox();

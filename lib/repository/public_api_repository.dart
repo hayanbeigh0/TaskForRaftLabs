@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:flutter_task/models/public_api.dart';
-import 'package:flutter_task/utils/app_constants.dart';
+import '../models/public_api.dart';
+import '../utils/app_constants.dart';
 import 'package:http/http.dart' as http;
 
 class PublicApiRepository {
