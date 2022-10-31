@@ -11,7 +11,8 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
+      color: Colors.white,
       width: double.infinity,
       height: double.infinity,
       child: BlocBuilder<PublicApiBloc, PublicApiState>(
